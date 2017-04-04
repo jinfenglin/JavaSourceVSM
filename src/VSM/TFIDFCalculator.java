@@ -1,3 +1,5 @@
+package VSM;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -34,7 +36,7 @@ public class TFIDFCalculator {
                 }
             }
         }
-        return Math.log(docs.size() / n);
+        return 1 + Math.log(docs.size() / n);
     }
 
     /**
